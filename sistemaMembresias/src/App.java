@@ -4,7 +4,7 @@ import clases.*;
 import java.time.*;
 public class App{
     public static void main(String[] args) throws SQLException {
-    
+        //Comentario para probar
         conexion conexion = new conexion("jdbc:mysql://localhost:3306/elitecard", "root", "");
         Connection con = conexion.conectar();
         nivelDeTarjeta adminNiveles = new nivelDeTarjeta(conexion);
