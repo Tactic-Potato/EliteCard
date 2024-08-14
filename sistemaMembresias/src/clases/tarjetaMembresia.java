@@ -3,7 +3,6 @@ import java.sql.*;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 public class tarjetaMembresia {
 
@@ -19,7 +18,7 @@ public class tarjetaMembresia {
     private boolean bandera;
     private double dineroUsuario;
     private int numeroMembresia;
-    private int numeroMembresiaAsignada, numeroRenovacionAsignado, numeroCancelacionAsignado;
+    private int numeroRenovacionAsignado, numeroCancelacionAsignado;
     private Date fechaCreacion, fechaExpiracion, nuevaFechaExpiracion;
     private int mes, anio;
     

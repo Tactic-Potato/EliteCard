@@ -8,7 +8,6 @@ public class pago {
     private boolean bandera;
     private double dineroUsuario;
     private double cambio;
-    private String tarjeta = " "; 
     DecimalFormat df = new DecimalFormat("0.00");
 
     public pago(){

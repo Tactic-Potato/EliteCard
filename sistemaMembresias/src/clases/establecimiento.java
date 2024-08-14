@@ -7,7 +7,6 @@ public class establecimiento{
     Scanner s = new Scanner(System.in);
     private String nombre;
     private String codigo;
-    private String direccion;
     private String calle;
     private String numero;
     private String colonia;
@@ -40,7 +39,6 @@ public class establecimiento{
 public void updateEstablecimiento() throws SQLException{
     
     Connection con = conexion.conectar();
-    Statement st = con.createStatement();
         do{
             do {
                 System.out.println(colores.AZUL + "\n- - - - GESTIONAR ESTABLECIMIENTO - - - - - \n"+colores.RESET);
