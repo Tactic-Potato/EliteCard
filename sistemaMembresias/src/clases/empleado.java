@@ -47,6 +47,7 @@ public class empleado extends persona {
                 System.out.println("\nIngrese el número del empleado del cual desea ver su información (o 'r' para cancelar): ");
                 String input = s.next();
                 if (input.equalsIgnoreCase("r")) {
+                    limpiarConsola();
                     System.out.println("\nOperación cancelada.");
                     s.nextLine();
                     return;
@@ -310,6 +311,7 @@ public class empleado extends persona {
                         s.nextLine(); // Limpiar el buffer del Scanner
                         if (opcion == 5) { // Agregué una opción 5 para cancelar la operación
                             System.out.println("Operación cancelada.");
+                            limpiarConsola();
                             return; // Salir del método
                         }
 
