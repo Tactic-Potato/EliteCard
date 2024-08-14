@@ -4,8 +4,6 @@ import clases.*;
 import java.time.*;
 public class App{
     public static void main(String[] args) throws SQLException {
-        //Comentario para probar
-        //segunda prueba
         conexion conexion = new conexion("jdbc:mysql://localhost:3306/elitecard", "root", "");
         Connection con = conexion.conectar();
         nivelDeTarjeta adminNiveles = new nivelDeTarjeta(conexion);
@@ -22,7 +20,6 @@ public class App{
         LocalDate fechaHoy = LocalDate.now();
         Date fecha = Date.valueOf(fechaHoy);
         int numSession;
-        // Primer trycatch para verificar la conexion con la BD 
         try {
             limpiarConsola();
             System.out.println(colores.ORO + "\n");
@@ -51,7 +48,7 @@ public class App{
                         case "a":
                         do{
                             banderalogin = false;
-                            System.out.println(colores.AZUL + "\nINICIO DE SESIÓN");
+                            System.out.println(colores.AZUL + "\n - - - INICIO DE SESIÓN - - - ");
                             if(adminEmpld.iniciarsesion() == false){
                                 break;
                             } else {
@@ -65,7 +62,7 @@ public class App{
                                 System.out.println("                     \\/_/ //");
                                 System.out.println("   ''-.._.-''-.._.. -(||)(')");
                                 System.out.println("                     '''");
-                                System.out.println(colores.CIAN + "\nBienvenido al sistema de tarjetas de membresías, "+admEmpleado.retornarNombre(numSession)+" \n¡Gracias por iniciar sesión!" + colores.RESET);
+                                System.out.println(colores.CIAN + "\nBienvenido al sistema de tarjetas de membresías estimado "+admEmpleado.retornarNombre(numSession)+" \n¡Gracias por iniciar sesión!" + colores.RESET);
                                 do {
                                 System.out.println("\nIngrese una de las siguientes opciones");
                                 System.out.println(  colores.PURPURA + "\ta) Ingresar al apartado de gestión\n"
