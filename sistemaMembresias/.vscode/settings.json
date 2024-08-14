@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Usuario\\Desktop\\mysql-connector-java-5.1.49\\mysql-connector-java-5.1.49\\mysql-connector-java-5.1.49.jar",
+        "c:\\Users\\jillj\\OneDrive\\Documentos\\POO\\APP\\mysql-connector-java-5.1.49\\mysql-connector-java-5.1.49.jar"
+    ],
+    "workbench.colorCustomizations": {
+        "minimap.background": "#00000000",
+        "scrollbar.shadow": "#00000000"
+    }
+}
