@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Scanner;
 public class tarjetaMembresia {
-
     private int tarjetaID;
     private String motivo;
     private int puntosActuales, puntosAcumulados, puntosGastados;
